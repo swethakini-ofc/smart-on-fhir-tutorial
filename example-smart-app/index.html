@@ -20,7 +20,18 @@ th, td {
   text-align: left;
  
 }
-
+#t01 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#t01 th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#t01 td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 * {
   box-sizing: border-box;
 }
@@ -58,7 +69,7 @@ th, td {
   
   <div class="column">
   
-  <table id="t01">
+  <table>
     <tr>
     <td><div><strong>Gender</strong></div><div id='gender'></div></td>
     <td><div><strong>Age</strong></div><div>  22</div></td>
@@ -81,18 +92,24 @@ th, td {
 </div>
 <h3>Observation Resource</h3>
  <table id="t01">
-    <tr>
-    <td><strong>Height :</strong></td>
-    <tdid='gender'></td>
-  </tr>
+ 
   <tr>
-    <td><strong>Systolic Blood Pressure :</strong></td>
-     <td>Female</td>
-  </tr>
-  <tr>
-    <td><strong>Diastolic Blood Pressure :</strong></td>
-     <td>Female</td>
-  </tr>
+          <th>Systolic Blood Pressure:</th>
+          <td id='systolicbp'></td>
+
+        </tr>
+        <tr>
+          <th>Diastolic Blood Pressure:</th>
+          <td id='diastolicbp'></td>
+        </tr>
+   <tr>
+          <th>LDL:</th>
+          <td id='ldl'></td>
+        </tr>
+        <tr>
+          <th>HDL:</th>
+          <td id='hdl'></td>
+        </tr>
   </table>
     <!-- Required JS files to enable this page to embed within an MPage -->
     <!--
